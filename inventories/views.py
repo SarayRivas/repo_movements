@@ -15,7 +15,7 @@ class InventoryMovementViewSet(viewsets.ModelViewSet):
     serializer_class = InventoryMovementSerializer
     
     def _delta(self, movement_type: str, qty: int) -> int:
-        if movement_type == 'por_confirmar':
+        if movement_type == 'confirmar':
             return 0
         return qty if movement_type == 'entrada' else -qty
 
