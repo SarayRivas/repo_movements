@@ -1,6 +1,6 @@
 
 from rest_framework import viewsets
-from .models import  InventoryMovement
+from .models import  InventoryMovement, Inventory
 from .serializers import  InventoryMovementSerializer
 from django.db import transaction
 from django.db.models import F
